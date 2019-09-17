@@ -1,0 +1,1 @@
+ConfigCat.Client.Serilog
