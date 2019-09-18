@@ -1,6 +1,8 @@
 # ConfigCat.Client.Serilog
 Serilog integration for ConfigCat.Client - simple .NET logging with fully-structured events
 
+![Icon](ConfigCat.Client.Serilog/ConfigCat.Client.Serilog.png)
+
 [NuGet](https://www.nuget.org/packages/ConfigCat.Client.Serilog) | [GitHub](https://github.com/adambajguz/ConfigCat.Client.Serilog)
 
 ## Getting Started
