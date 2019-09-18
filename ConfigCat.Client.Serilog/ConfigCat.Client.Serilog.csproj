@@ -3,13 +3,24 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Platforms>AnyCPU;x86;x64</Platforms>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>ConfigCat config configuration remoteconfiguration ConfigCatClient featureflags featuretoggle featureswitch feature canaryrelease softlaunch releasestrategy Serilog logging semantic structured Error-Reporting Crash-Reporting Exception-Handling Logging</PackageTags>
+    <PackageReleaseNotes>Initial release of the package.</PackageReleaseNotes>
+    <Copyright>Copyright (c) 2019 Adam Bajguz</Copyright>
+    <Description>Serilog integration for ConfigCat.Client - simple .NET logging with fully-structured events</Description>
+    <Company>Adam Bajguz</Company>
+    <Authors>Adam Bajguz</Authors>
+    <PackageProjectUrl>https://github.com/adambajguz/ConfigCat.Client.Serilog</PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>ConfigCat.Client.Serilog.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="ConfigCat.Client" Version="2.5.6" />
     <PackageReference Include="Serilog" Version="2.8.0" />
   </ItemGroup>
-
 </Project>
