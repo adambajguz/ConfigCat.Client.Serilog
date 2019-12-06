@@ -14,29 +14,23 @@
 
         public void Debug(string message)
         {
-            if (TargetLogEnabled(LogLevel.Debug))
-                global::Serilog.Log.Debug(FormatMessage(LogLevel.Debug, message));
+            global::Serilog.Log.Debug(FormatMessage(LogLevel.Debug, message));
         }
 
         public void Information(string message)
         {
-            if (TargetLogEnabled(LogLevel.Info))
-                global::Serilog.Log.Information(FormatMessage(LogLevel.Info, message));
+            global::Serilog.Log.Information(FormatMessage(LogLevel.Info, message));
         }
 
         public void Warning(string message)
         {
-            if (TargetLogEnabled(LogLevel.Warning))
-                global::Serilog.Log.Warning(FormatMessage(LogLevel.Warning, message));
+            global::Serilog.Log.Warning(FormatMessage(LogLevel.Warning, message));
         }
 
         public void Error(string message)
         {
-            if (TargetLogEnabled(LogLevel.Error))
-                global::Serilog.Log.Error(FormatMessage(LogLevel.Error, message));
+            global::Serilog.Log.Error(FormatMessage(LogLevel.Error, message));
         }
-
-        private bool TargetLogEnabled(LogLevel targetTrace) => (byte)LogLevel >= (byte)targetTrace;
 
         protected virtual string FormatMessage(LogLevel logLevel, string message) => $"{_LoggerName ?? "ConfigCat"} - {message}";
     }
