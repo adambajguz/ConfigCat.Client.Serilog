@@ -25,7 +25,7 @@ LogLevel logLevel = LogLevel.Warn; // Log only WARNING and higher messages
 var clientConfiguration = new AutoPollConfiguration
 {
     ApiKey = "#YOUR-API-KEY#",
-    Logger = new SerilogLogger("ConfigCat", logLevel);,
+    Logger = new SerilogLogger(logLevel);,
     PollIntervalSeconds = 5
 };
 
