@@ -32,7 +32,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ConfigCat.Client" Version="3.0.19" />
+    <PackageReference Include="ConfigCat.Client" Version="4.0.36" />
     <PackageReference Include="Serilog" Version="2.9.0" />
   </ItemGroup>
 </Project>
